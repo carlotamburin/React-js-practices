@@ -1,0 +1,30 @@
+Callback funkcije:
+1.	Napisati funkciju vecina() koja kao argument prima niz i callback funkciju. Callback funkcija će vratiti true ili false.  Funkcija vecina() će iterirati kroz niz i pozivati callback funkciju nad svakim elementom dokle god se ne može odrediti je li većina elemenata true . Ako je broj true povratnih vrijednosti, manji ili jednak broju false povratnih vrijednosti, funkcija vecina() vraća false. U protivnom vraća true.
+2.	Napisati funkciju prioritiziraj() koja prima niz i callback. Callback funkcija će vratiti true ili false. Funkcija prioritiziraj() će iterirati kroz niz i pozvati callback funkciju nad svakim elementom. Funkcija prioritiziraj() će vratiti novi niz u kojem su u prvom dijelu niza svi oni elementi za koje je callback vratila true, a u drugom dijelu svi oni elementi za koje je callback funkcija vratila false.
+Proučiti funkciju Array.unshift().
+3.	Kreirati funkciju grupiraj() koja prima niz i callback te vraća objekt. Funkcija grupiraj() će iterirati kroz niz i izvršiti callback funkciju nad svakim članom. Svaki return funkcije će postati ključ u objektu. Vrijednost na svakom ključu će biti niz čiji elementi su rezultat callback obrade.
+Npr. Za niz {1, 2, 3, 4, 5} i cb(input){if (input % 2 == 0) return true;} povratna vrijednost funkcije gupiraj() je {true:[2, 4], false:[1, 3, 5]}.
+4.	Kreirati funkciju komutativnost()  koja prima dvije callback funkcije i vrijednost. Funkcija komutativnost() će vratiti true ako prosljeđivanje vrijednosti u prvu callback funkciju i onda prenošenje rezultirajuće vrijednost u drugu funkciju, daje isti rezultat kao prenošenje vrijednosti u drugu funkciju i prosljeđivanje rezultirajuće vrijednosti u prvu funkciju.
+5.	Kreirati funkciju pipe() koja prima niz (i to niz funkcija) i jednu vrijednost. Funkcija pipe() vrijednost ubacuje u prvu funkciju u nizu, te njen rezultat ubacuje u drugu funkciju u nizu, pa njen rezultat u treću i tako do zadnje funkcije u nizu. Funkcija pipe() vraća konačni rezultat.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Asynchronicity
+1.	Kreirati funkciju zakasnjeliPozdrav() koja ispisuje “Hello!!!” nakon 3 sekunde. (console.log()).
+2.	Napisati funkciju helloGoodbye() koja ispisuje “Hello!!!” odmah, a ”Goodbye” nakon 2 sekunde. 
+3.	Napisati funkciju pokvarenaPloca() koja ispisuje “Hello again ” svaku sekundu.
+4.	Napisati funkciju ogranicenoPonavljanje() koja ispisuje “Hej za sada” svaku sekundu, ali samo 5 sekundi. Izučiti korištenje metode clearInterval().
+5.	Napisati funkciju delayCounter() koja prima broj (nazovimo ga “target”) kao prvi argument i broj sekundi (nazovimo ga “wait”) kao drugi argument, te vraća funkciju. Kada se vraćena funkcija pozove, na konzoli se ispisuju svi brojevi između 1 i “target” broja. Brojevi se počinju ispisivati nakon “wait” sekundi.
+
+

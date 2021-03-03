@@ -1,0 +1,28 @@
+Vježba 4
+Zadatak 1.
+Izraditi React.js aplikacju. Iskonfigurirati VS Code prema osobnim preferencama kako bi se olakšao razvoj aplikacije. Prema osobnom nahođenju izraditi sučelje koje će predstavljati tražilicu. Dodati dvije dropdown kontrole. Odabir u prvoj kontroli uvjetuje sadržaj druge (obratno ne vrijedi). Primjerice-izradili ste stranicu za kraft čokolateriju. U gornjoj dropdown kontroli se odabere vrsta čokolade npr. čokolada sa dodacima (defaultnu vrijednost možete sami postaviti), te se na osnovu gornjeg odabira donja select kontrola popuni podvrstama gornje odabranog proizvoda: čokolada sa lješnjakom, čokolada sa bademom, čokolada sa grožđicama, ... Nije dozvoljeno koristiti koristiti class React komponente. Umjesto toga koristiti isključivo function komponente u kombinaciji sa konceptom Hook (useState, useEffect). 
+Za kreiranje endpointa koristiti servis za mockanje podataka po vlastitom izboru (npr. https://www.mockable.io/ ). Endpointe organizirajte na sljedeći način (koristite svoje proizvode, neka ne budu svima čokolade )
+/vrsteCokolade/ (vraca npr. obicna, organska, saDodacima)
+
+vrsteCokolade/obicna/
+	vrsteCokolade/obicna/mlijecna
+	vrsteCokolade/obicna/tamna
+vrsteCokolade/obicna/bijela
+	vrsteCokolade/obicna/ruby
+	
+vrsteCokolade/organska/
+vrsteCokolade/organska /vegan
+vrsteCokolade/organska /stevia
+vrsteCokolade/organska /bezglutenska
+
+vrsteCokolade/saDodacima/
+vrsteCokolade/ saDodacima /ljesnjak
+vrsteCokolade/ saDodacima /badem
+vrsteCokolade/ saDodacima /grozdjice
+Zadatak 2.
+Komponente se izrađuju kako bi se mogle iznova koristiti (reusability). Kako bi se slijedio taj princip, izmjenit ćete rješenje prethodnog zadatka na sljedeći način. Izraditi odvojenu funkciju useDropdown (u odvojenom file-u), koja će služiti za generiranje iznova iskoristivih (reusable) select komponenti. Hint. u funkciju poslati opcije kojima će se select popuniti. Funkcija osim što vraća komponentu (select populiran sa custom opcijama), vraća i stanje (state) te funkciju za promjenu stanja (useDropdown postaje svojevrsni custom hook). U konačnici rješenje drugog zadataka radi istu stvar kao i rješenje prvog zadatka, sa izbjegnutim suvišnim ponavljnjem koda.
+Uploadati odvojeno rješenja i jednog i drugog zadatka.
+
+
+ 
+
